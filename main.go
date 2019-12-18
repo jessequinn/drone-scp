@@ -32,23 +32,23 @@ func main() {
 	app.Version = Version
 	app.Flags = []cli.Flag{
 		cli.StringSliceFlag{
-			Name:   "host, H",
+			Name:   "host,H",
 			Usage:  "Server host",
 			EnvVar: "PLUGIN_HOST,SCP_HOST,SSH_HOST,HOST,INPUT_HOST",
 		},
 		cli.StringFlag{
-			Name:   "port, P",
+			Name:   "port,P",
 			Value:  "22",
 			Usage:  "Server port, default to 22",
 			EnvVar: "PLUGIN_PORT,SCP_PORT,SSH_PORT,PORT,INPUT_PORT",
 		},
 		cli.StringFlag{
-			Name:   "username, u",
+			Name:   "username,u",
 			Usage:  "Server username",
 			EnvVar: "PLUGIN_USERNAME,PLUGIN_USER,SCP_USERNAME,SSH_USERNAME,USERNAME,INPUT_USERNAME",
 		},
 		cli.StringFlag{
-			Name:   "password, p",
+			Name:   "password,p",
 			Usage:  "Password for password-based authentication",
 			EnvVar: "PLUGIN_PASSWORD,SCP_PASSWORD,SSH_PASSWORD,PASSWORD,INPUT_PASSWORD",
 		},
