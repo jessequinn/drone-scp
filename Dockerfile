@@ -14,4 +14,4 @@ ENV GO111MODULE=on
 
 RUN go build -v -a -tags netgo -o release/linux/amd64/drone-scp .
 
-CMD ["/app/release/linux/amd64/drone-ssh"]
+CMD ["/app/release/linux/amd64/drone-scp"]
