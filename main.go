@@ -65,7 +65,7 @@ func main() {
 			Value:  10 * time.Minute,
 		},
 		cli.StringFlag{
-			Name:   "key, k",
+			Name:   "ssh-key, key, k",
 			Usage:  "ssh private key",
 			EnvVar: "PLUGIN_KEY,SCP_KEY,SSH_KEY,KEY,INPUT_KEY",
 		},
