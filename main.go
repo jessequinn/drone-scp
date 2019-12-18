@@ -65,27 +65,27 @@ func main() {
 			Value:  10 * time.Minute,
 		},
 		cli.StringFlag{
-			Name:   "ssh-key, key, k",
+			Name:   "ssh-key,key,k",
 			Usage:  "ssh private key",
-			EnvVar: "PLUGIN_KEY,SCP_KEY,SSH_KEY,KEY,INPUT_KEY",
+			EnvVar: "PLUGIN_SSH_KEY,PLUGIN_KEY,SCP_KEY,SSH_KEY,KEY,INPUT_KEY",
 		},
 		cli.StringFlag{
-			Name:   "key-path, i",
+			Name:   "key-path,i",
 			Usage:  "ssh private key path",
 			EnvVar: "PLUGIN_KEY_PATH,SCP_KEY_PATH,SSH_KEY_PATH,INPUT_KEY_PATH",
 		},
 		cli.StringSliceFlag{
-			Name:   "target, t",
+			Name:   "target,t",
 			Usage:  "Target path on the server",
 			EnvVar: "PLUGIN_TARGET,SCP_TARGET,TARGET,INPUT_TARGET",
 		},
 		cli.StringSliceFlag{
-			Name:   "source, s",
+			Name:   "source,s",
 			Usage:  "scp file list",
 			EnvVar: "PLUGIN_SOURCE,SCP_SOURCE,SOURCE,INPUT_SOURCE",
 		},
 		cli.BoolFlag{
-			Name:   "rm, r",
+			Name:   "rm,r",
 			Usage:  "remove target folder before upload data",
 			EnvVar: "PLUGIN_RM,SCP_RM,RM,INPUT_RM",
 		},
